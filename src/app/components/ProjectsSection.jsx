@@ -11,7 +11,7 @@ const projectsData = [
     description: "Developed Admin Portal for managing employees and their data, using MERN stack.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/naumanjadev/Adminportal",
     previewUrl: "/",
   },
   {
@@ -19,8 +19,8 @@ const projectsData = [
     title: "Social Media Dashbaord",
     description: "Developed an Social Media Dashboad using MERN Stack.",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    tag: ["All", "Frontend"],
+    gitUrl: "https://github.com/naumanjadev/SocialMedia",
     previewUrl: "/",
   },
   {
@@ -29,7 +29,7 @@ const projectsData = [
     description: "Developed an E-commerce website using React and Firebase.",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/naumanjadev/Ecommerce",
     previewUrl: "/",
   },
   {
@@ -47,16 +47,16 @@ const projectsData = [
     description: "Authentication and CRUD operations",
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/naumanjadev/Task-Management",
     previewUrl: "/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    title: "Chat Application",
+    description: "Real time Chat Application using socket",
     image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    tag: ["All", "Backend"],
+    gitUrl: "https://github.com/naumanjadev/Chat-App",
     previewUrl: "/",
   },
 ];
@@ -92,13 +92,13 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="Frontend"
+          isSelected={tag === "FrontEnd"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Backend"
+          isSelected={tag === "Backend"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">

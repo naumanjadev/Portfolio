@@ -5,8 +5,8 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "FullStack",
-    id: "FullStack",
+    title: "Skills",
+    id: "Skills",
     content: (
       <ul className="list-disc pl-2">
         <li>React</li>
@@ -19,8 +19,8 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Cloud Engineer",
-    id: "Cloud Engineer",
+    title: "Education",
+    id: "Education",
     content: (
       <ul className="list-disc pl-2">
         <li>Fullstack Academy of Code</li>
@@ -29,19 +29,19 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Cloud Solution Architect",
-    id: "Cloud Solution Architect",
+    title: "Experience",
+    id: "Experience",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Company 1     YEAR-YEAR</li>
+        <li>Company 2    YEAR-YEAR</li>
       </ul>
     ),
   },
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("FullStack");
+  const [tab, setTab] = useState("Education");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -65,26 +65,26 @@ const AboutSection = () => {
             I am excited to work with others to create amazing applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
-            <TabButton
-              selectTab={() => handleTabChange("FullStack")}
-              active={tab === "FullStack"}
+          <TabButton
+              selectTab={() => handleTabChange("Education")}
+              active={tab === "Education"}
             >
               {" "}
-              FullStack{" "}
+              Education{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("Cloud Engineer")}
-              active={tab === "Cloud Engineer"}
+              selectTab={() => handleTabChange("Experience")}
+              active={tab === "Experience"}
             >
               {" "}
-              Cloud Engineer{" "}
+              Experience{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("Cloud Solution Architect")}
-              active={tab === "Cloud Solution Architect"}
+              selectTab={() => handleTabChange("Skills")}
+              active={tab === "Skills"}
             >
               {" "}
-              Cloud Solution Architect{" "}
+              Skills{" "}
             </TabButton>
           </div>
           <div className="mt-8">
