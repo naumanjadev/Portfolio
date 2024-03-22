@@ -23,8 +23,9 @@ const TAB_DATA = [
     id: "Education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <p>Air University</p>
+        <li>Bachelors of Computer Science</li>
+        <li>2001-2005</li>
       </ul>
     ),
   },
@@ -33,8 +34,11 @@ const TAB_DATA = [
     id: "Experience",
     content: (
       <ul className="list-disc pl-2">
-        <li>Company 1     YEAR-YEAR</li>
-        <li>Company 2    YEAR-YEAR</li>
+        <li>Codethink Ltd, Senior Fullstack Engineer (2020 - Present)</li>
+        <li>OneStream Software, Senior Backend Engineer (2019 - 2020)</li>
+        <li>Bytes Software Service, Junior Full stack Engineer (2015 - 2019)</li>
+        <li>Global Technologies, Junior Backend Engineer (2013 - 2015)</li>
+        <li>VTS Software Ltd, Intern Backend Engineer (2012 - 2013)</li>
       </ul>
     ),
   },
@@ -59,13 +63,13 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
-            working with React, Angular, Node.js, Express, PostgreSQL, Javascript,
-            Typescript. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            working with React, Angular, Node.js, Express, PostgreSQL,
+            Javascript, Typescript. I am a quick learner and I am always looking
+            to expand my knowledge and skill set. I am a team player and I am
+            excited to work with others to create amazing applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
-          <TabButton
+            <TabButton
               selectTab={() => handleTabChange("Education")}
               active={tab === "Education"}
             >
